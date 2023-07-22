@@ -1,0 +1,130 @@
+/* pages/mytext/mytext.wxss */
+.fir{
+  display:flex;
+  justify-content: space-between;
+  flex-direction:row;
+  padding:3rpx;
+  margin:20rpx;
+}
+.fir1{
+  display:flex;
+  flex-direction: row;
+  padding:5rpx;
+  border-bottom: gray solid 4rpx;
+}
+.fir11{
+  width:60rpx;
+  height:60rpx;
+  margin-right:20rpx;
+}
+.fir12{
+  margin:10rpx;
+}
+.fir2{
+  width:75rpx;
+  height:75rpx;
+}
+.sea{
+  margin:10rpx;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+.sea1{
+  display:flex;
+  flex-direction:row;
+  width:80%;
+  border:double #666666 4rpx;
+  border-radius:15rpx;
+}
+.sea2{
+  background-color: #DDDDDD;
+  margin-left:15rpx;
+  width:100rpx;
+  height:60rpx;
+  border:solid #666666 3rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.sea20{
+  background-color: #AAAAAA;
+  margin-left:15rpx;
+  width:100rpx;
+  height:60rpx;
+  border:solid #666666 3rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.sea21{
+  color:#888888;
+}
+.tex{
+  background-color:aliceblue;
+  border-top-style:ridge;
+  border-bottom-style:ridge;
+  border-radius:20rpx;
+  height:530rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding:5rpx;
+  margin:30rpx;
+}
+.tex0{
+  margin-bottom:25rpx;
+  margin-right:5rpx;
+  display:flex;
+  flex-direction:row;
+}
+.tex01{
+  font-size:38rpx;
+  font-weight: bold;
+  border-bottom: 2rpx black solid;
+}
+.tex02{
+  position:fixed;
+  right:7%;
+  width:55rpx;
+  height:55rpx;
+}
+.tex1{
+  display:flex;
+  flex-direction:row;
+  margin-top:30rpx;
+  height:300rpx;
+}
+.tex11{
+  margin-top:5rpx;
+  word-break:break-all;
+}
+.tex111{
+  font-size:30rpx;
+}
+.tex12{
+  height:300rpx;
+  width:300rpx;
+}
+.tex4{
+  display:flex;
+  flex-direction:row;
+  margin-top:15rpx;
+}
+.tex41{
+  position:fixed;
+  right:7%;
+  border-bottom:2rpx solid #666666;
+}
+.tex411{
+  color:#888888;
+  font-size:30rpx;
+}
+.img{
+  margin-top:30rpx;
+  width:90%;
+}

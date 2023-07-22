@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view refresher-enabled='true' scroll-y='true' style='display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center'>
+  <view class="fir">
+    <view class="fir1">
+      <image src="{{avatar}}" class="fir11"></image>
+      <text class="fir12">{{nickname}}</text>
+    </view>
+    <image src="{{ispin}}" class="fir2" bindtap="pin"></image>
+  </view>
+  <view class="tex3">
+    <input class='tex31' type='text' bindinput='getTitle' confirm-type='done' maxlength='20' value="{{title}}"/>
+    <view class='tex32'>
+      <view class='tex321'>
+        <text class='tex3211'>输入笔记：</text>
+        <textarea class='tex3212' bindinput="getText" auto-height value="{{text}}" />
+      </view>
+        <view class='tex322'>
+          <image class='tex3221' src='{{img}}' mode='aspectFit' bindtap='preImg' bindlongpress="getImg"></image>
+          <text class='tex3222'>（长按修改图片）</text>
+        </view>
+      </view>
+      <view class="tex4">
+        <view class="tex41">
+          <text class="tex411">上传日期：{{timestamp}}</text>
+        </view>
+      </view>
+  </view>
+  <view class="but0">
+    <button type="warn" bindtap="delete" class="but" size="mini">删除笔记</button>
+    <button type="warn" bindtap="finish" class="but" size="mini">更新笔记</button>
+  </view>
+</scroll-view>

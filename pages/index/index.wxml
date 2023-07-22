@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="ind1">
+    <image src="{{userInfo.avatarUrl}}" class="ind11"></image>
+    <text class="ind12">{{userInfo.nickName}}</text>
+  </view>
+  <view class="ind2">
+    <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/in2.png" class="ind21" bindtap="inMy"></image>
+    <text class="ind22">（进入我的记事本）</text>
+  </view>
+  <view class="ind3">
+    <button bindtap="createMy" type="primary">点击创建</button>
+    <text class="ind22">（还没有？创建一个）</text>
+  </view>
+  <block wx:if="{{!hasUserInfo && canIUse}}">
+    <button type="warn" size="mini" class="ind31"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权信息</button>
+  </block>
+</view>

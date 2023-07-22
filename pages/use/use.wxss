@@ -1,0 +1,4 @@
+/* pages/use/use.wxss */
+.use{
+  width:100%;
+}

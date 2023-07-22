@@ -1,0 +1,58 @@
+/**index.wxss**/
+page{
+  background-color: aliceblue;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.ind1{
+  display:flex;
+  flex-direction: row;
+  position:absolute;
+  bottom:88%;
+  left:5%;
+  padding:5rpx;
+  border-bottom: gray solid 4rpx;
+}
+.ind11{
+  width:60rpx;
+  height:60rpx;
+  margin-right:20rpx;
+}
+.ind12{
+  margin:10rpx;
+}
+.ind2{
+  margin-top:80rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding:5rpx;
+}
+.ind21{
+  height:400rpx;
+  width:400rpx;
+}
+.ind22{
+  margin-top:5rpx;
+  font-size:30rpx;
+}
+.ind3{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-top:150rpx;
+  margin-bottom:50rpx;
+  padding:5rpx;
+}
+.add{
+  margin-top:50rpx;
+}

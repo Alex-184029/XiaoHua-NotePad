@@ -1,0 +1,45 @@
+<!--pages/mytext/mytext.wxml-->
+<scroll-view refresher-enabled='true' scroll-y='true' style='display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center'>
+  <view class="fir">
+    <view class="fir1">
+      <image src="{{avatar}}" class="fir11"></image>
+      <text class="fir12">{{nickname}}</text>
+    </view>
+    <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/add5.png" class="fir2" bindtap="goUp"></image>
+  </view>
+  <view class='sea'>
+   <view class="sea1">
+    <icon size='25' type='search'></icon>
+    <input class='sea12' type='text' bindinput='searchInp' confirm-type='search' maxlength='20' placeholder='搜索笔记：' placeholder-style="font-size:30rpx" bindblur="blurInp" value='{{InputData}}'/>
+   </view>
+    <picker bindchange="bindPickerChange" range="{{array}}" header-text="搜索结果：">
+      <view class="sea2" hover-class="sea20"><text class="sea21">搜索</text></view>
+    </picker>
+  </view>
+  <block wx:if="{{DataList.length==0}}">
+    <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/kong4.png" class="img"></image>
+  </block>
+  <block wx:for="{{DataList}}" wx:key="item">
+    <view class="tex" bindtap='goDetail' data-item="{{item}}">
+      <view class="tex0">
+        <text class="tex01">{{item.title}}</text>
+        <block wx:if="{{item.ispin}}">
+          <image src="../../images/ispin.png" class="tex02"></image>
+        </block>
+      </view>
+      <view class="tex1">
+        <view class="tex11">
+          <text class="tex111">{{item.text}}</text>
+        </view>
+        <block wx:if='{{item.image != ""}}'>
+          <image class="tex12" src="{{item.image}}" mode='aspectFit'></image>
+        </block>
+      </view>
+       <view class="tex4">
+        <view class="tex41">
+          <text class="tex411">上传日期：{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

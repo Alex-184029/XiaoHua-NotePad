@@ -1,0 +1,17 @@
+<!--pages/set/set.wxml-->
+<view class="hel0">
+  <view class="hel1" bindtap="toUse">
+    <text class="hel11" bindtap="toUse">帮助</text>
+    <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/arrow1.png" class="hel12"></image>
+  </view>
+  <view class="hel1" bindtap="toAbout">
+    <text class="hel11">关于</text>
+    <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/arrow1.png" class="hel12"></image>
+  </view>
+    <!--似乎只能按钮来搞-->
+  <view class="hel2">
+    <button open-type="share" type="primary">点我分享</button>
+    <text class="hel22">(觉得还不错，去分享？)</text>
+  </view>
+  <image src="cloud://xiaohua-if599.7869-xiaohua-if599-1303194403/localimage/note.png" class="hel3" mode="widthFix"></image>
+</view>

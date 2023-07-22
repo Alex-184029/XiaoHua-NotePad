@@ -1,0 +1,38 @@
+/* pages/set/set.wxss */
+page{
+  background-color: aliceblue;
+}
+.hel0{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.hel1{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  border-bottom:2rpx black solid;
+  width:90%;
+  margin-top:45rpx;
+}
+.hel11{
+  font-size:43rpx;
+}
+.hel12{
+  width:50rpx;
+  height:50rpx;
+}
+.hel2{
+  display:flex;
+  flex-direction:column;
+  margin-top:100rpx;
+  align-items:center;
+}
+.hel22{
+  font-size:30rpx;
+  margin-top:15rpx;
+}
+.hel3{
+  margin-top:30rpx;
+  width:75%;
+}
